@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Employee Details Form</h1>
+
+@*<p>@ViewBag.result</p>*@
+
+<a href="Employee/List">Fill Form Here</a>
+
+@*<table class="table">
+     <thead>
+         <tr>
+             <td>Surname</td>
+             <td>OtherNames</td>
+             <td>Mobile No</td>
+             <td>Address</td>
+         </tr>
+     </thead>
+@foreach(EmployeeDetailsInfo ed in Model){
+       
+       <tbody>
+           <tr>
+               <td>@Html.DisplayFor(moditem => ed.surName)</td>
+               <td>@ed.otherNames</td>
+               <td>@ed.mobileNo</td>
+               <td>@ed.address</td>
+               <td>  
+                <button class="btn btn-danger btn-sm">Delete</button>  
+                <a class="btn btn-success btn-sm text-white">Edit</a>  
+                </td>  
+           </tr>
+       </tbody>
+
+   
+}
+</table>
+    *@
